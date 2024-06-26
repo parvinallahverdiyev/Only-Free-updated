@@ -35,11 +35,11 @@ ul li a:hover{
     border: none;
 }
 .container{
+    width: 95%;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    margin: 20px 0px;
+    margin: 50px 30px;
     display: flex;
-    margin-left: 10px;
     box-shadow: 1px 1px 5px rgb(255, 254, 254);
 }
 .about{
@@ -61,7 +61,7 @@ p{
     margin: 10px 10px;
 }
 footer p{
-    margin-top: 120px;
+    margin-top: 170px;
     text-align: center;
     font-family: sans-serif;
     font-size: 15px;
@@ -79,10 +79,10 @@ li i{
         margin: 10px auto;
     }
    .container{
-        width: 90%;
+        width: 75%;
         display: block;
         text-align: center;
-        margin: 15px 15px;
+        margin: 15px 35px;
     }
     img{
         display: inline-block;

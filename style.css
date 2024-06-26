@@ -6,10 +6,11 @@
 }
 body{
     width: 100%;
+    height: 100vh;
     background-color: #e5edeb;
     background-image: url(img/main-bg.jpg);
     background-size: cover;
-    height: 100vh;
+    
     text-align: center;
     background-repeat: no-repeat;
 }
@@ -17,16 +18,18 @@ header{
     height: 100px;
 }
 nav{
+   margin: 20px auto;
+    display: inline-block;
     width: 100%;
 }
-ul li{
+nav ul{
     display: inline-block;
-    text-align: center;
-    margin-top: 30px;
-    list-style-type: none;
-    font: 1.2em Tahoma, sans-serif;
 }
-ul li a{
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li a{
     text-decoration: none;
     margin: 0 5px;
     color: #e8e2e2;
@@ -35,17 +38,24 @@ ul li a{
     font-weight: 500;
     transition: .3s;
 }
-ul li a:hover{
+nav ul li a:hover{
     color: aqua;
     border: none;
+}
+nav ul li a .fa-solid{
+    font-size: 15px;
+
+}
+li i{
+    padding: 0 5px;
+    font-size: 18px;
 }
 h1{
     font-size: 80px;
     color: #fff;
     text-shadow: 1px 1px 5px black;
     text-align: center;
-    padding-top: 120px;
-    margin-bottom: 20px;
+    margin: 100px 20px;
 }
 p{
     font-size: 20px;
@@ -54,6 +64,34 @@ p{
     text-shadow: 1px 1px 5px black;
     text-align: center;
 }
+form {
+    margin: 0 -400px 0 150px;
+    display: inline-block;
+}
+form p{
+    display: block;
+    background: #fff;
+    width: 170px;
+    height: 35px;
+    border: none;
+    box-shadow: 1px 1px 10px rgb(114, 112, 112);
+    border-radius: 50px;
+}
+form p i{
+    text-shadow: none;
+    color: #938f8f;
+    font-size: 15px;
+    margin: 0 10px;
+}
+form input{
+    padding: 5px;
+    width: 130px;
+    height: 15px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 10px;
+}
 footer p{
     margin-top: 180px;
     text-align: center;
@@ -61,11 +99,7 @@ footer p{
     font-size: 15px;
     color: #fff;
 }
-li i{
-    margin-left: 15px;;
-    padding: 0 5px;
-    font-size: 18px;
-}
+
 @media only screen and (max-width: 768px) {
     body{
         width: 100%;
@@ -73,19 +107,62 @@ li i{
         background-size: cover;
         height: 100vh;
         text-align: center;
+        object-fit: cover;
+    }
+    header{
+        display: inline-block;
+        height: 100px;
+    }
+    nav{
+        display: inline-block;
         text-align: center;
     }
-    ul li{
-        display: block;
-        margin: 10px auto;
+    nav ul{
+        display: inline-block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    nav ul li a{
+        display: inline-block;
+        font-size: 13px;
     }
     h1{
-        font-size: 50px;
+        display: block;
+        font-size: 40px;
     }
     p{
+        display: block;
         font-size: 15px;
-        margin: 70px 10px;
-        letter-spacing: 1px;
+        margin: 0 20px;
+    }
+    form {
+        margin: 25px 0 0 40px;
+        display: inline-block;
+    }
+    form p{
+        margin: 0 40px 0 0;
+        display: inline-block;
+        background: #fff;
+        width: 150px;
+        height: 25px;
+        border: none;
+        box-shadow: 1px 1px 10px rgb(114, 112, 112);
+        border-radius: 50px;
+    }
+    form p i{
+        text-shadow: none;
+        color: #938f8f;
+        font-size: 10px;
+    }
+    form input{
+        width: 90px;
+        height: 12px;
+        border: none;
+        outline: none;
+        background: #fff;
+        font-size: 10px;
     }
     footer p{
         margin-top: 180px;
