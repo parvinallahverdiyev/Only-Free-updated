@@ -2,26 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body{
     width: 100%;
+    height: 100vh;
     background-image: url(../img/about-bg.jpg);
     text-align: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 header{
     height: 100px;
 }
 nav{
+   margin: 20px auto;
+    display: inline-block;
     width: 100%;
 }
-ul li{
+nav ul{
     display: inline-block;
-    margin-top: 30px;
+}
+nav ul li{
+    display: inline-block;
     list-style-type: none;
 }
-ul li a{
-    font-family: "Poppins", sans-serif;
+nav ul li a{
     text-decoration: none;
     margin: 0 5px;
     color: #e8e2e2;
@@ -30,13 +36,15 @@ ul li a{
     font-weight: 500;
     transition: .3s;
 }
-ul li a:hover{
+nav ul li a:hover{
     color: aqua;
     border: none;
 }
+nav ul li a .fa-solid{
+    font-size: 15px;
+}
 .container{
     width: 95%;
-    font-family: "Poppins", sans-serif;
     text-align: center;
     margin: 50px 30px;
     display: flex;
@@ -46,8 +54,8 @@ ul li a:hover{
     width: 100%;
 }
 img{
-    width: 300px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border: none;
     margin: 20px 20px;
 }
@@ -61,7 +69,7 @@ p{
     margin: 10px 10px;
 }
 footer p{
-    margin-top: 170px;
+    margin-top: 250px;
     text-align: center;
     font-family: sans-serif;
     font-size: 15px;
@@ -74,15 +82,30 @@ li i{
 }
 @media only screen and (max-width: 768px) {
     
-    ul li{
-        display: block;
-        margin: 10px auto;
+    header{
+        display: inline-block;
+        height: 100px;
+    }
+    nav{
+        display: inline-block;
+        text-align: center;
+    }
+    nav ul{
+        display: inline-block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    nav ul li a{
+        display: inline-block;
+        font-size: 13px;
     }
    .container{
-        width: 75%;
+        width: 90%;
         display: block;
         text-align: center;
-        margin: 15px 35px;
+        margin: 15px 15px;
     }
     img{
         display: inline-block;
@@ -92,12 +115,13 @@ li i{
     }
     h1{
         font-size: 20px;
+        color: #fff;
     }
     p{
         font-size: 12px;
         text-align: justify;
     }
     footer p{
-        margin-top: 30px;
+        margin-top: 110px;
     }
 }

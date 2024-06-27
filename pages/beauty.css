@@ -2,27 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 body{
     background-image: url(../img/beauty-bg.jpg);
     background-size: cover;
-    height: 100vh;
-    text-align: center;
     width: 100%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
 }
 header{
-    height: 80px;
+    height: 100px;
 }
 nav{
+    margin-top: 30px;
+    display: inline-block;
     width: 100%;
 }
-ul li{
+nav ul{
     display: inline-block;
-    margin-top: 30px;
+}
+nav ul li{
+    display: inline-block;
     list-style-type: none;
 }
-ul li a{
-    font-family: "Poppins", sans-serif;
+nav ul li a{
     text-decoration: none;
     margin: 0 5px;
     color: #e8e2e2;
@@ -31,16 +36,48 @@ ul li a{
     font-weight: 500;
     transition: .3s;
 }
-ul li a:hover{
+nav ul li a:hover{
     color: aqua;
     border: none;
 }
+nav ul li a .fa-solid{
+    font-size: 15px;
+}
+form {
+    margin: 0 -400px 0 140px;
+    display: inline-block;
+}
+form p{
+    display: block;
+    background: #fff;
+    width: 170px;
+    height: 35px;
+    border: none;
+    box-shadow: 1px 1px 10px rgb(114, 112, 112);
+    border-radius: 50px;
+}
+form p i{
+    text-shadow: none;
+    color: #938f8f;
+    font-size: 15px;
+    margin: 10px 10px;
+}
+form input{
+    padding: 5px 0;
+    margin-top: 13px;
+    width: 130px;
+    height: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    font-size: 12px;
+}
+
 .content{
     font-family: "Roboto", sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    
 }
 .card{
     margin: 10px auto;
@@ -84,7 +121,8 @@ ul li a:hover{
     margin: 0 5px;
 }
 footer p{
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 5px;
     text-align: center;
     font-family: sans-serif;
     font-size: 15px;
@@ -97,21 +135,80 @@ li i{
 }
 @media only screen and (max-width: 768px) {
     body{
+        background-image: url(../img/beauty-bg.jpg);
+        background-size: cover;
+        height: 100%;
+        text-align: center;
         width: 100%;
         background-repeat: no-repeat;
-        background-size: cover;
+    }
+    header{
+        display: inline-block;
+        height: 100px;
+    }
+    nav{
+        display: inline-block;
         text-align: center;
-        height: 100%;
     }
-    ul li{
-        display: block;
-        margin: 10px auto;
+    nav ul{
+        display: inline-block;
     }
-    .card{
+    nav ul li{
+        display: inline-block;
+        margin: 10px 0;
+    }
+    nav ul li a{
+        display: inline-block;
+        font-size: 13px;
+    }
+    form {
+        margin: 20px 0 0 10px;
+        display: inline-block;
+    }
+    form p{
+        display: inline-block;
+        background: #fff;
+        width: 150px;
+        height: 27px;
+        border: none;
+        box-shadow: 1px 1px 10px rgb(114, 112, 112);
+        border-radius: 50px;
+    }
+    form p i{
+        margin: 0 10px;
+        text-shadow: none;
+        color: #938f8f;
+        font-size: 10px;
+
+    }
+    form input{
+        width: 90px;
+        height: 12px;
+        border: none;
+        outline: none;
+        background: #fff;
+        font-size: 10px;
+        margin: 8px;
+    }
+   .container{
+        width: 75%;
         display: block;
-        margin: 30px auto;
+        text-align: center;
+        margin: 15px 40px;
+    }
+    img{
+        display: inline-block;
+        width: 100px;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 13px;
+    }
+    p{
+        font-size: 12px;
+        text-align: justify;
     }
     footer p{
-        margin-top: 10px;
+        margin-top: 30px;
     }
 }
